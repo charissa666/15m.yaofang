@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>需求登记</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/chuf_check.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="javascript:history.go(-1)"><img src="../img/top_left.png"/></a>
+			<span>需求登记</span>
+		</div>
+		<!--main-->
+		<form method="post" class="form">
+			<div class="userInf">
+				<span>姓名<i>*</i></span>
+				<input type="text" placeholder="请输入姓名" id="uName"/>
+			</div>
+			<div class="userInf">
+				<span>联系电话<i>*</i></span>
+				<input type="text" placeholder="请输入电话" id="uPhone"/>
+			</div>
+			<div class="formHint">
+				<span>请上传处方图片</span>
+				<img src="../img/hint_tan.jpg" id="hint"/>
+			</div>
+			<div class="formImg">
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp01"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp02"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp03"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp04"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp05"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/uploadImg.jpg"/></dt>
+					<input type="file" accept="image/*" class="formImgInp" id="inp06"/>
+					<dd><img src="../img/close03.png"/></dd>
+				</dl>
+			</div>
+			<div class="formTel">
+				<img src="../img/tel.png"/>
+				<b>客服<a href="tel:400-650-9988">400-650-9988</a></b>
+			</div>
+			<input type="submit" value="提交" class="formBtn"/>
+		</form>
+		<!--提示内容-->
+		<div class="shade"></div>
+		<div class="hintCont">
+			<img src="../img/close01.jpg" class="hintClose"/>
+			<p>1.正确上传处方图片</p>
+			<img src="../img/chuf01.jpg"/>
+			<p>2.错误上传处方图片</p>
+			<span>不可遮挡，请展示清晰图片</span>
+			<img src="../img/chuf02.jpg"/>
+		</div>
+		<!--提示框-->
+		<div class="errorHint"></div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+	<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/chuf_check.js" type="text/javascript" charset="utf-8"></script>
+</html>

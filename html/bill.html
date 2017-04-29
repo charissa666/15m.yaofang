@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发票信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bill.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="order.html"><img src="../img/top_left.png"/></a>
+			<span>发票信息</span>
+		</div>
+		<!--content-->
+		<div class="fapCont">
+			<div class="fapItem">
+				<span>发票信息</span>
+				<div>
+					<input type="radio" name="fapUse" id="NoUse"/><label for="NoUse">不使用发票</label>
+					<input type="radio" name="fapUse" id="YUse" checked="checked"/><label for="YUse">使用发票</label>
+				</div>
+			</div>
+			<div class="fff"></div>
+			<div class="fapItem">
+				<span>发票信息</span>
+				<div>普通发票（纸质）</div>
+			</div>
+			<div class="fapItem">
+				<span>抬头类别</span>
+				<div>
+					<input type="radio" name="fapType" id="person" checked="checked"/><label for="person">个人</label>
+					<input type="radio" name="fapType" id="company"/><label for="company">单位</label>
+				</div>
+			</div>
+			<input type="text" placeholder="请填写抬头" />
+			<div class="fapItem">
+				<span>发票内容</span>
+				<div>
+					<input type="radio" name="fapCont" id="detail" checked="checked"/><label for="detail">明细</label>
+					<input type="radio" name="fapCont" id="drug"/><label for="drug">药品</label>
+				</div>
+			</div>
+		</div>
+		<a href="order.html" class="Btn">保存</a>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		//发票内容显示隐藏
+		$('input[name="fapUse"]').click(function(){
+			console.log($(this).attr('id'))
+			if($(this).attr('id') == 'NoUse'){
+				$(this).parents('.fapItem').siblings().hide();
+			}else{
+				$(this).parents('.fapItem').siblings().show();
+			}
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加每康卡</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="com_header">
+			<a href="user_wallet.html"><img src="../img/top_left.png"/></a>
+			<span>添加每康卡</span>
+		</div>
+		<!--content-->
+		<div class="add_mkk">
+			<span>序列号</span>
+			<input type="text" placeholder="请输入序列号" id="num"/>
+		</div>
+		<div class="add_mkk">
+			<span>密码</span>
+			<input type="text" placeholder="请输入密码" id="pword"/>
+		</div>
+		<a href="javascript:;" class="Btn" id="binding">绑定</a>
+		<!--弹层-->
+		<div class="mkk_hint"></div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#binding').click(function(ev){
+				var num = $('#num').val();
+				var pword = $('#pword').val();
+				if(num == '' || pword == ''){
+					$('.mkk_hint').show().html('请输入正确序列号及密码');
+					ev.preventDefault();
+				}else{
+					$('.mkk_hint').show().html('绑定成功,页面即将跳转');
+					setTimeout(function(){
+						$('#binding').attr('href','user_wallet.html').click();
+					},1500)
+				};
+				setTimeout(function(){
+					$('.mkk_hint').hide();
+				},1500);
+			});
+		</script>
+	</body>
+</html>

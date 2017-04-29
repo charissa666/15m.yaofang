@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新建地址</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/creat_add.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="address.html"><img src="../img/top_left.png"/></a>
+			<span>新建地址</span>
+		</div>
+		<!--content-->
+		<div class="cont">
+			<div>
+				<span>收货人姓名</span>
+				<input type="text" placeholder="请输入收货人姓名" id="Uname"/>
+				<img src="../img/close02.png" class="nameClose"/>
+			</div>
+			<div>
+				<span>手机号码</span>
+				<input type="text" placeholder="请输入手机号" id="phone"/>
+			</div>
+			<div class="city">
+				<span>省份</span>
+				<select id="sheng" name="province" ></select>
+				<img src="../img/arrows_right.jpg"/>
+			</div>
+			<div class="city">
+				<span>市</span>
+				<select id="shi" name="city"></select>
+				<img src="../img/arrows_right.jpg"/>
+			</div>
+			<div class="city">
+				<span>区县</span>
+				<select id="xian" name="country" ></select>
+				<img src="../img/arrows_right.jpg"/>
+			</div>
+			<div class="city">
+				<span>街道</span>
+				<select id="xiang" name="street" ></select> 
+				<img src="../img/arrows_right.jpg"/>
+			</div>
+			<div>
+				<span>详细地址</span>
+				<input type="text" placeholder="请输入详细地址" id="detail_add"/>
+			</div>
+		</div>
+		<div class="default"><input type="checkbox" id="default" checked="checked"/><label for="default">默认地址（每次购买时默认使用该地址）</label></div>
+		<a href="address.html" class="Btn" id="save">保存</a>
+		<!--错误提示-->
+		<div class="shade"></div>
+		<div class="errorHint">
+			<img src="../img/hint_fail.jpg" alt="" />
+			<p>请重新输入手机号码！</p>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+	<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/GlobalProvinces_main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/GlobalProvinces_extend.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/creat_add.js" type="text/javascript" charset="utf-8"></script>
+</html>

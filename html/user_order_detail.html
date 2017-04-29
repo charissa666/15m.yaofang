@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user_order_detail.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="com_header">
+			<a href="user_order.html"><img src="../img/top_left.png"/></a>
+			<span>订单详情</span>
+		</div>
+		<!--content-->
+		<!--订单状态-->
+		<div class="status">
+			<dl class="on">
+				<dt>1</dt>
+				<dd>已付款</dd>
+			</dl>
+			<dl class="on">
+				<dt>2</dt>
+				<dd>待配货</dd>
+				<dd></dd>
+			</dl>
+			<dl>
+				<dt>3</dt>
+				<dd>物流配送</dd>
+				<dd></dd>
+			</dl>
+			<dl>
+				<dt>4</dt>
+				<dd>交易完成</dd>
+				<dd></dd>
+			</dl>
+		</div>
+		<!--收货人信息-->
+		<div class="orderInf">
+			<div class="borderB"></div>
+			<div class="orderAdd">
+				<p>订单号：14652356</p>
+				<p>收货人：李芳 1652342345</p>
+				<p>收货地址：北京市 丰台区 右安门街道 星火九路</p>
+			</div>
+			<!--<div class="orderInfCancel">已取消</div>-->
+			<div class="borderB"></div>
+		</div>
+		<!--付款方式-->
+		<div class="orderWay">
+			<div class="optionInf">
+				<div>
+					<span>付款方式：</span>
+					<em>在线支付</em>
+				</div>
+			</div>
+			<div class="optionInf">
+				<div>配送信息：</div>
+				<div>
+					<span>配送方式</span>
+					<em>双休日、假日送</em>
+				</div>
+			</div>
+			<div class="optionInf">
+				<div>
+					<span>发票信息：</span>
+					<em>普通发票（纸质）-单位</em>
+				</div>
+				<div>
+					<span>仁和药房网（北京）科技有限公司</span>
+					<em>明细</em>
+				</div>
+				<!--<div>
+					<span>发票明细：</span>
+					<em>无</em>
+				</div>-->
+			</div>
+		</div>
+		<!--物流信息-->
+		<div class="orderTransport">
+			<div>物流信息</div>
+			<ul class="wlList">
+				<li>
+					<p>【康利达物流】【张在在 15698456236】送货签收人</p>
+					<span>2016-08-12 15:12:56</span>
+				</li>
+				<li>
+					<p>正在派件，派件员【张在在 15698456236】，打描人【张在在】</p>
+					<span>2016-08-11 08:12:56</span>
+				</li>
+				<li>
+					<p>快件己经到达丰台东大街营业部（8号店），正在进行快件分拣</p>
+					<span>2016-08-11 08:12:56</span>
+				</li>
+				<li>
+					<p>由药房网录单</p>
+					<span>2016-08-11 08:12:56</span>
+				</li>
+				<li>
+					<p>您的订单将由【康利达物流】送货，快递单号为【13569845623】</p>
+					<span>2016-08-11 08:12:56</span>
+				</li>
+			</ul>
+		</div>
+		<!--商品信息-->
+		<div class="orderGood">
+			<div class="store"><img src="../img/hospital.jpg"/>北京-海淀区-安门店</div>
+			<div class="goods">
+				<div class="goodsInf">
+					<img src="../img/goods02.jpg"/>
+					<div>
+						<p>补水保温贴膜</p>
+						<p>1盒</p>
+					</div>
+					<span>￥30.00</span>
+				</div>
+				<div class="goodsInf">
+					<img src="../img/goods02.jpg"/>
+					<div>
+						<p>补水保温贴膜</p>
+						<p>1盒</p>
+					</div>
+					<span>￥30.00</span>
+				</div>
+			</div>
+		</div>
+		<!--价格总计-->
+		<div class="orderPrice">
+			<p>
+				<span>商品总计</span>
+				<i>￥15.00</i>
+			</p>
+			<p>
+				<span>运费</span>
+				<i>￥0.00</i>
+			</p>
+			<p>
+				<span>优惠</span>
+				<i>￥10.00</i>
+			</p>
+			<p>
+				<span>积分抵扣</span>
+				<i>￥0.00</i>
+			</p>
+		</div>
+		<div class="orderFoot">
+			<p>实付款：<span>￥200.00</span></p>
+			<p>下单时间：2016-10-15 22:12:56</p>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//物流信息展开
+			var liOnoff = true;
+			$('.wlList>li:first-child').click(function(){
+				if(liOnoff){
+					$('.wlList>li').show().css('border-left-color','#e6e6e6');
+					$('.wlList>li:last-child').css('border-left-color','#fff');
+					$(this).children('p').addClass('on');
+					liOnoff = false;
+				}else{
+					$(this).css('border-left-color','#fff');
+					$('.wlList>li:not(:first-child)').hide();
+					$(this).children('p').removeClass('on');
+					liOnoff = true;
+				}
+			});
+		</script>
+	</body>
+</html>

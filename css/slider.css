@@ -1,0 +1,61 @@
+.slider-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-list {
+  display: -webkit-box;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-item a {
+  display: block;
+}
+
+.slider-item img {
+  width: 100%;
+}
+
+.transitionable {
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.slider-page {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  text-align: center;
+}
+
+.slider-page ul {
+  display: inline-block;
+  text-align: center;
+}
+
+.slider-page ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 0.13rem;
+  height: 0.13rem;
+  margin: 0 0.1rem;
+  border-radius: 50%;
+  background: #999;
+}
+
+.slider-page ul li.active {
+  background: #ffab00;
+}
+
+.img-wrap {
+  width: 100%;
+  height: 100%;
+  background: #fff url("../img/loading.gif") no-repeat center center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>充值</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="com_header">
+			<a href="user_wallet.html"><img src="../img/top_left.png"/></a>
+			<span>充值</span>
+		</div>
+		<!--content-->
+		<div class="yck_money">
+			<span>充值金额</span>
+			<input type="text" placeholder="请输入金额"/>
+		</div>
+		<ul class="wallet_tit">
+			<li class="on">网上银行支付</li>
+			<li>网络支付平台支付</li>
+		</ul>
+		<ul class="payforWay" style="display: block;">
+			<li>
+				<input type="radio" name="bank" id="icbc" checked="checked"/>
+				<label for="icbc">
+					<img src="../img/ICBC.jpg"/>
+					<span>中国工商银行</span>
+				</label>
+			</li>
+			<li>
+				<input type="radio" name="bank" id="cmb"/>
+				<label for="cmb">
+					<img src="../img/CMB.jpg"/>
+					<span>中国工商银行</span>
+				</label>
+			</li>
+		</ul>
+		<ul class="payforWay">
+			<li>
+				<input type="radio" name="online" id="zfb" checked="checked"/>
+				<label for="zfb">
+					<img src="../img/zf_zfb.jpg"/>
+					<span>支付宝支付</span>
+				</label>
+			</li>
+			<li>
+				<input type="radio" name="online" id="wx"/>
+				<label for="wx">
+					<img src="../img/zf_wx.jpg"/>
+					<span>微信支付</span>
+				</label>
+			</li>
+		</ul>
+		<a href="javascript:;" class="Btn">确认</a>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//支付方式切换
+			$('.wallet_tit li').click(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+				$('.payforWay').eq($(this).index()).show().siblings('.payforWay').hide();
+			});
+		</script>
+	</body>
+</html>

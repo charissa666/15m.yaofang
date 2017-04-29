@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的处方</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background:#f0f0f0;">
+		<!--header-->
+		<div class="com_header">
+			<a href="javascript:;"><img src="../img/top_left.png"/></a>
+			<span style="margin-left:0.9rem;">我的处方</span>
+			<a href="chuf_check.html" class="addChf">添加新处方</a>
+		</div>
+		<!--content-->
+		<div class="chuf">
+			<div class="chuf_name">
+				<span>李芳 16523565465</span>
+				<div>
+					<b>审核通过</b>
+					<img src="../img/trash.png" class="chuf_del"/>
+				</div>
+			</div>
+			<ul class="chuf_img">
+				<li><img src="../img/chuf01.jpg"/></li>
+				<li><img src="../img/chuf01.jpg"/></li>
+				<li><img src="../img/chuf01.jpg"/></li>
+			</ul>
+		</div>
+		<div class="chuf">
+			<div class="chuf_name">
+				<span>李芳 16523565465</span>
+				<div>
+					<b>审核通过</b>
+					<img src="../img/trash.png" class="chuf_del"/>
+				</div>
+			</div>
+			<ul class="chuf_img">
+				<li><img src="../img/chuf01.jpg"/></li>
+				<li><img src="../img/chuf01.jpg"/></li>
+				<li><img src="../img/chuf01.jpg"/></li>
+			</ul>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.chuf_del').click(function(){
+				$(this).parents('.chuf').remove();
+			});
+		</script>
+	</body>
+</html>

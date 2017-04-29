@@ -1,0 +1,17 @@
+body{background:#f0f0f0;}
+.cont{background:#fff;color:#333;}
+.cont>div{line-height:1.2rem;border-bottom:1px solid #f0f0f0;padding:0 0.34rem 0 0.4rem;}
+.cont>div>span{font-size:0.3rem;display: inline-block;width:1.8rem;}
+.cont>div>input{width:4.5rem;line-height: 0.4rem;margin-top:0.4rem;}
+.nameClose{width:0.33rem;float:right;margin-top:0.38rem;}
+.city{position:relative;}
+.city>img{width:0.16rem;float:right;margin-top:0.45rem;}
+.default{color:#999;text-align: center;margin:0.76rem auto 0.41rem;}
+.default>input{display: none;}
+.default>label:before{display: inline-block;content:"";width:0.35rem;height:0.35rem;background:url(../img/select_bj03.png) left top no-repeat;background-size:cover;margin-right:0.12rem;vertical-align: bottom;}
+.default>input:checked+label:before{background-image:url(../img/select_bj04.png);}
+.errorBtn{background:#d5d5d5;color:#666;}
+.shade{display:none;width:100%;height:100%;background:rgba(0,0,0,.5);position:fixed;left:0;top:0;}
+.errorHint{display:none;width:3.66rem;height:2.04rem;background:#fff;border-radius: 5px;position:fixed;left:50%;top:50%;margin-left:-1.83rem;margin-top:-1.02rem;text-align: center;}
+.errorHint>img{width:0.68rem;margin:0.36rem auto 0.15rem;}
+.city>select{width:4.5rem;appearance:none;-webkit-appearance: none;background:#fff;}

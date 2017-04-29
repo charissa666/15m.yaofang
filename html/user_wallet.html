@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的钱包</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="com_header">
+			<a href="javascript:;"><img src="../img/top_left.png"/></a>
+			<span style="margin-left:0.9rem;">我的钱包</span>
+			<em class="setCode">设置支付密码</em>
+		</div>
+		<!--content-->
+		<ul class="wallet_tit">
+			<li class="on">预存款</li>
+			<li>每康卡</li>
+		</ul>
+		<div class="walletCont" style="display: block;">
+			<p class="wallet_user">我的预存款：<span>￥0.0</span></p>
+			<a href="user_add_yck.html" class="Btn">充值</a>
+			<ul class="wallet_list">
+				<li>
+					<span>资金变动记录：</span>
+				</li>
+				<li>
+					<span>16-09-26 17:27</span>
+					<em>消费 <b class="re">￥1</b></em>
+				</li>
+				<li>
+					<span>16-09-26 17:27</span>
+					<em>充值 <b class="ad">￥1</b></em>
+				</li>
+				<li>
+					<span>16-09-26 17:27</span>
+					<em>消费 <b class="re">￥10</b></em>
+				</li>
+				<li>
+					<span>16-09-26 17:27</span>
+					<em>充值 <b class="ad">￥100</b></em>
+				</li>
+			</ul>
+		</div>
+		<div class="walletCont">
+			<div class="wallet_mkk">
+				<span>我的每康卡：<em>5张</em></span>
+				<a href="user_add_mkk.html" class="addMkk">添加<img src="../img/add02.jpg" alt="" /></a>
+			</div>
+			<div class="mkk">
+				<div class="mkk_top">
+					<span>每康卡</span>
+					<div class="mkk_c">
+						<p><span>余额</span><b>￥</b><em>50</em>.00</p>
+					</div>
+					<p>NO:test12345678</p>
+				</div>
+				<div class="mkk_text">
+					<p>总额：50.00元</p>
+					<p>有效期：2016.12.23-2019.12.23</p>
+				</div>
+			</div>
+			<div class="mkk">
+				<div class="mkk_top">
+					<span>每康卡</span>
+					<div class="mkk_c">
+						<p><span>余额</span><b>￥</b><em>50</em>.00</p>
+					</div>
+					<p>NO:test12345678</p>
+				</div>
+				<div class="mkk_text">
+					<p>总额：50.00元</p>
+					<p>有效期：2016.12.23-2019.12.23</p>
+				</div>
+			</div>
+			<div class="mkk past">
+				<div class="mkk_top">
+					<span>每康卡</span>
+					<div class="mkk_c">
+						<p><span>余额</span><b>￥</b><em>50</em>.00</p>
+					</div>
+					<p>NO:test12345678</p>
+				</div>
+				<div class="mkk_text">
+					<p>总额：50.00元</p>
+					<p>有效期：2016.12.23-2019.12.23</p>
+				</div>
+			</div>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//预存款、每康卡切换
+			$('.wallet_tit li').click(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+				$('.walletCont').eq($(this).index()).show().siblings('.walletCont').hide();
+			});
+		</script>
+	</body>
+</html>

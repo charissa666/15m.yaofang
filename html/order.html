@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>填写订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/order.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="buy_car.html"><img src="../img/top_left.png"/></a>
+			<span>填写订单</span>
+		</div>
+		<!--content-->
+		<div class="content">
+			<div class="orderItem01">
+				<a href="address.html">
+					<p>收货人：李芳 16512343654</p>
+					<p class="userAdd"><img src="../img/add_03.jpg"/>收货地址：北京市 丰台区 右安门街道 星火九路</p>
+					<div class="borderB"></div>
+				</a>
+			</div>
+			<div class="orderItem02">
+				<div class="store"><img src="../img/hospital.jpg"/>北京-海淀区-安门店</div>
+				<div class="goods">
+					<div class="goodsInf">
+						<img src="../img/goods02.jpg"/>
+						<div>
+							<p>补水保温贴膜</p>
+							<p>1盒</p>
+						</div>
+						<span>￥30.00</span>
+					</div>
+					<div class="goodsInf">
+						<img src="../img/goods02.jpg"/>
+						<div>
+							<p>补水保温贴膜</p>
+							<p>1盒</p>
+						</div>
+						<span>￥30.00</span>
+					</div>
+				</div>
+			</div>
+			<div class="orderItem02">
+				<div class="store"><img src="../img/hospital.jpg"/>北京-海淀区-安门店</div>
+				<div class="goods">
+					<div class="goodsInf">
+						<img src="../img/goods02.jpg"/>
+						<div>
+							<p>补水保温贴膜</p>
+							<p>1盒</p>
+						</div>
+						<span>￥30.00</span>
+					</div>
+				</div>
+				<a href="coupon.html" class="juan">
+					<span>优惠券</span>
+					<b>0张可用</b>
+					<img src="../img/arrows_right.jpg" alt="" />
+					<em>未使用</em>
+				</a>
+			</div>
+			<div class="orderItem03">
+				<a href="pay_way.html" class="optionInf">
+					<span>支付及配送方式</span>
+					<img src="../img/arrows_right.jpg" alt="" />
+					<div>
+						<p>在线支付</p>
+						<p>双休日、假日送</p>
+					</div>
+				</a>
+				<a href="bill.html" class="optionInf">
+					<span>发票信息</span>
+					<img src="../img/arrows_right.jpg" alt="" />
+					<div>
+						<p>普通发票（纸质）-个人</p>
+						<p>明细</p>
+						<!--<p style="line-height:0.8rem;">无</p>-->
+					</div>
+				</a>
+			</div>
+			<div class="orderItem04">
+				<span>积分抵扣</span>
+				<i>20积分减5元</i>
+				<div>
+					<input type="radio" name="jifen" id="jifY" checked="checked"/><label for="jifY">是</label>
+					<input type="radio" name="jifen" id="jifN" /><label for="jifN">否</label>
+				</div>
+			</div>
+			<div class="orderItem05">
+				<p>
+					<span>商品总计</span>
+					<i>￥15.00</i>
+				</p>
+				<p>
+					<span>运费</span>
+					<i>￥0.00</i>
+				</p>
+				<p>
+					<span>优惠</span>
+					<i>￥10.00</i>
+				</p>
+				<p>
+					<span>积分抵扣</span>
+					<i>￥0.00</i>
+				</p>
+			</div>
+			<div class="orderItem06"></div>
+		</div>	
+		<div class="footTotal">
+			<span>实付款：￥120.32</span>
+			<a href="payfor.html">提交订单</a>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+</html>

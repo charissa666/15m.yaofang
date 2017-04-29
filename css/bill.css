@@ -1,0 +1,17 @@
+body{background:#f0f0f0;}
+.fapCont{background:#fff;}
+.fapCont>div{padding:0 0.35rem 0 0.48rem;}
+.fapItem>span{font-size:0.3rem;}
+.fapItem>div{float:right;}
+.fapItem:first-child{line-height:1.24rem;}
+.fff{background:#f0f0f0;height: 0.3rem;}
+.fapItem:nth-child(3){line-height:1.1rem;border-bottom:1px solid #e0e0e0;}
+.fapItem:nth-child(4){padding:0.49rem 0.35rem 0.32rem 0.48rem;}
+.fapItem:nth-child(4)>span,.fapItem:nth-child(6)>span{color:#979797;}
+.fapCont>input{width:6.75rem;height:0.74rem;line-height:0.74rem;border:1px solid #5783cb;background:#f6f5f5;border-radius: 5px;padding-left:0.15rem;box-sizing:border-box;margin-left:0.48rem;margin-bottom:0.36rem;}
+.fapItem:nth-child(6){line-height:1.04rem;border-top:1px solid #e0e0e0;}
+
+input[type="radio"]{display: none;}
+input[type="radio"]+label{margin-left:0.46rem;}
+input[type="radio"]+label:before{display: inline-block;content:'';width:0.24rem;height:0.24rem;background:url(../img/select_bj06.png) left top no-repeat;background-size:contain;margin-right:0.1rem;position:relative;top:0.04rem;}
+input[type="radio"]:checked+label:before{background-image: url(../img/select_bj05.png);}

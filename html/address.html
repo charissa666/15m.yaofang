@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收货地址</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="order.html"><img src="../img/top_left.png"/></a>
+			<span>收货地址</span>
+		</div>
+		<!--content-->
+		<div class="addList">
+			<div class="add">
+				<p class="addName">
+					<label><input type="radio" name="add" checked="checked"/><b></b>李芳 16545454656</label>
+				</p>
+				<p>收货地址：北京市 丰台区 右安门街道 星火九路</p>
+				<div class="do">
+					<label><input type="radio" name="default" checked="checked"/><b></b>设为默认地址</label>
+					<a href="creat_add.html">编辑</a>
+					<a href="javascript:;" class="del">删除</a>
+				</div>
+			</div>
+			<div class="add">
+				<p class="addName">
+					<label><input type="radio" name="add" /><b></b>李芳 16545454656</label>
+				</p>
+				<p>收货地址：北京市 丰台区 右安门街道 星火九路</p>
+				<div class="do">
+					<label><input type="radio" name="default" id="" /><b></b>设为默认地址</label>
+					<a href="creat_add.html">编辑</a>
+					<a href="javascript:;" class="del">删除</a>
+				</div>
+			</div>
+			<a href="creat_add.html" class="Btn addBtn"><img src="../img/add.png"/>添加收货地址</a>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+	<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//删除地址
+		$('.del').click(function(){
+			$(this).parents('.add').remove();
+		});
+	</script>
+</html>

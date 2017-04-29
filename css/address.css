@@ -1,0 +1,15 @@
+body{background:#f0f0f0;}
+.add{padding:0 0.2rem;background:#fff;margin-bottom:0.3rem;overflow: hidden;}
+.add>p{color:#999;line-height:0.7rem;margin-left:0.74rem;width:6.4rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.add>.addName{margin-left:0.15rem;margin-top:0.3rem;}
+.addName>label{font-size:0.3rem;color:#333;}
+.addName>label>input{display: none;}
+.addName>label>b{display: inline-block;width:0.35rem;height:0.35rem;background:url(../img/select_bj03.png) left top no-repeat;background-size:cover;position:relative;top:0.05rem;margin-right:0.25rem;}
+.addName>label>input:checked+b{background-image:url(../img/select_bj04.png);}
+.do{border-top:1px solid #f0f0f0;line-height:0.94rem;color:#666;}
+.do>label{margin-left:0.74rem;margin-right:0.7rem;}
+.do>label>input{display: none;}
+.do>label>b{display: inline-block;width:0.24rem;height:0.24rem;background:url(../img/select_bj06.png) left top no-repeat;background-size:contain;margin-right:0.1rem;position:relative;top:0.03rem;}
+.do>label>input:checked+b{background-image: url(../img/select_bj05.png);}
+.do>a{color:#4990e0;margin-right:0.5rem;display: inline-block;}
+.addBtn>img{width:0.32rem;display: inline-block;margin-right:0.36rem;vertical-align: inherit;}

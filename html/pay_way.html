@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>支付及配送方式</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pay_way.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="order.html"><img src="../img/top_left.png"/></a>
+			<span>支付及配送方式</span>
+		</div>
+		<!--content-->
+		<div class="pay_way">
+			<span>支付方式</span>
+			<div>
+				<input type="radio" name="payway" id="online" checked="checked"/><label for="online">在线支付</label>
+				<input type="radio" name="payway" id="delivery"/><label for="delivery">货到付款</label>
+			</div>
+		</div>
+		<div class="song_way">
+			<div>配送方式</div>
+			<div class="song_time">
+				<span>配送时间</span>
+				<select name="">
+					<option value="">工作日配送</option>
+					<option value="">双休日、假日送</option>
+					<option value="">不限</option>
+				</select>
+			</div>
+			<div class="song_store">
+				<div class="store_name">
+					<img src="../img/hospital.jpg"/>
+					<span>河北-沧州-迎宾路北分店（1种商品）</span>
+				</div>
+				<div class="store_way">
+					<div>
+						<input type="radio" name="yingbin" id="lo" checked="checked"/>
+						<label for="lo">门店药师上门配送（<span>配送服务费<em>￥0.00</em></span>）</label>
+					</div>
+				</div>
+			</div>
+			<div class="song_store">
+				<div class="store_name">
+					<img src="../img/hospital.jpg"/>
+					<span>河北-沧州-迎宾路北分店（1种商品）</span>
+				</div>
+				<div class="store_way">
+					<div>
+						<input type="radio" name="cangzhou" id="aq" checked="checked"/>
+						<label for="aq">门店自提（<span>配送服务费<em>￥0.00</em></span>）<br /><span class="ziti">（自提地址：北京市海淀区京卫大药房第2分店：北京市海淀区中关村大街37号京卫大药房）</span></label>
+					</div>
+					<div>
+						<input type="radio" name="cangzhou" id="sw"/>
+						<label for="sw">送货上门（<span>配送服务费<em>￥0.00</em></span>）</label>
+					</div>
+					<div>
+						<input type="radio" name="cangzhou" id="de"/>
+						<label for="de">门店药师上门配送（<span>配送服务费<em>￥0.00</em></span>）</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="order.html" class="Btn">确认</a>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+</html>

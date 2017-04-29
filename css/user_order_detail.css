@@ -1,0 +1,59 @@
+body{background:#f0f0f0;}
+body>div{background:#fff;}
+/*订单状态*/
+.status{margin-bottom:0.3rem;padding:0.6rem 0 0.54rem 0.5rem;overflow: hidden;position:relative;}
+.status>dl{float:left;color:#666;width:1.2rem;text-align: center;margin-right:0.5rem;}
+.status dt{width:0.46rem;line-height:0.46rem;background:#f4f5f6;border-radius: 50%;border:1px solid #bcbcbc;margin:0 auto 0.32rem;position: relative;z-index: 1;}
+.status>dl>dd:nth-child(3){width:1.5rem;height:0.04rem;background:#d5d5d5;position:absolute;top:0.82rem;z-index:0;}
+.status>dl:nth-child(2)>dd:nth-child(3){left:1.2rem;}
+.status>dl:nth-child(3)>dd:nth-child(3){left:2.9rem;}
+.status>dl:nth-child(4)>dd:nth-child(3){left:4.6rem;}
+dl.on>dt{background:#4990e0;color:#fff;border:1px solid #4990e0;}
+dl.on>dd{color:#4990e0;}
+dl.on>dd:nth-child(3){background:#a7cffb;}
+/*收货人信息*/
+.orderInf{color:#333;background:#fffbef;margin-bottom:0.3rem;position:relative;}
+.borderB{width:100%;height:0.07rem;background:url(../img/border_b.jpg) repeat-x left top;background-size:contain;}
+.orderInfCancel{color:#e83c48;font-size:0.34rem;position:absolute;right:0.32rem;top:0.45rem;}
+.orderAdd{margin:0.38rem;}
+.orderAdd>p{line-height:0.42rem;}
+/*付款方式*/
+.orderWay{margin-bottom:0.3rem;}
+.optionInf{border-bottom:1px solid #f0f0f0;padding:0.25rem 0;}
+.optionInf>div{line-height:0.52rem;padding-left:0.38rem;padding-right:0.32rem;}
+.optionInf em{float:right;}
+/*物流信息*/
+.orderTransport{background:#fff;margin-bottom:0.3rem;}
+.orderTransport>div{padding:0.4rem 0 0.27rem 0.42rem;border-bottom:1px solid #f0f0f0;}
+.wlList{padding:0.3rem 0.95rem 0 0.43rem;}
+.wlList>li{padding-bottom: 0.3rem;padding-left:0.3rem;position:relative;border-left-style:solid;border-left-width: 3px;border-left-color:#fff;}
+.wlList>li:first-child{color:#e83c48;}
+.wlList>li:before{display: block;content: '';width:0.24rem;height:0.24rem;background:url(../img/wl_bj01.png) left top no-repeat;background-size: cover;position:absolute;left:-0.13rem;top:0.08rem;z-index: 1;}
+.wlList>li:first-child:before{background-image: url(../img/wl_bj02.png);}
+.wlList>li:first-child:after{display: block;content: '';width:0.1rem;height:0.1rem;background:#fff;position: absolute;left:-0.06rem;top:0;z-index: 0;}
+.wlList>li:last-child:after{display: block;content: '';width:3px;height:0.1rem;background:#e6e6e6;position:absolute;left:-0.06rem;top:0;z-index:0;}
+.wlList>li:not(:first-child){display: none;}
+.wlList p{line-height: 0.4rem;}
+.wlList>li:first-child>p:before{display: block;content:'';width:0.27rem;height:0.16rem;background:url(../img/arrows_dowm.jpg) left top no-repeat;background-size:contain;position:absolute;right:-0.6rem;top:0.15rem;}
+.wlList>li:first-child>p.on:before{background-image: url(../img/arrows_up.jpg);}
+.wlList span{color:#999;font-size:0.26rem;margin-top:0.2rem;}
+/*商品信息*/
+.orderGood{margin-bottom: 0.3rem;}
+.store{font-size:0.3rem;border-bottom:1px solid #f0f0f0;padding-left:0.4rem;line-height:0.98rem;}
+.store>img{width:0.39rem;float:left;margin:0.35rem 0.23rem 0 0;}
+.goods{padding-left:0.4rem;}
+.goodsInf{padding:0.3rem 0 0.25rem 0.38rem;border-bottom:1px solid #f0f0f0;overflow: hidden;margin-right:0.32rem;}
+.goodsInf>img{float:left;width:0.8rem;margin-right:0.26rem;}
+.goodsInf>div{float:left;}
+.goodsInf>div>p{line-height:0.38rem;}
+.goodsInf>span{float:right;margin-top:0.4rem;}
+/*价格总计*/
+.orderPrice{padding:0.29rem 0.32rem 0.26rem 0.38rem;margin-bottom: 0.03rem;}
+.orderPrice>p{line-height:0.64rem;}
+.orderPrice>p>span{font-size:0.3rem;}
+.orderPrice>p>i{font-size:0.32rem;color:#e83c48;float:right;}
+.orderFoot{text-align: right;padding:0.35rem 0.27rem 0.3rem 0;}
+.orderFoot>p:first-child{font-size:0.34rem;color:#666;margin-bottom:0.16rem;}
+.orderFoot>p:first-child>span{color:#e83c48;}
+
+

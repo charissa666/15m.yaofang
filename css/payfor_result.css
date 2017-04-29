@@ -1,0 +1,10 @@
+body{background:#f0f0f0;}
+.cont{overflow: hidden;background:#fff;padding-bottom: 0.73rem;}
+.cont>img{width:0.96rem;margin:0.64rem auto 0.46rem;}
+.cont>p{color:#5b5b5b;text-align:center;}
+.sucHint{font-size:0.4rem;}
+.sucOrder{font-size:0.3rem;margin:0.23rem auto 0.47rem;}
+.sucBtn>a{display: block;float: left;width:2.41rem;line-height:0.72rem;text-align: center;color:#fff;background:#ff9c00;font-size:0.28rem;border-radius:5px;}
+.sucBtn>a:first-child{background:#4990e0;margin:0 0.7rem 0 1.09rem;}
+
+

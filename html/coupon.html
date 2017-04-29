@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>优惠券</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/coupon.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="order.html"><img src="../img/top_left.png"/></a>
+			<span>优惠券</span>
+		</div>
+		<!--content-->
+		<div class="cont" style="display: block;">
+			<div class="coupon">
+				<div class="leftBor"></div>
+				<div class="leftCont">
+					<span>￥<em>10.00</em></span>
+					<p>8月非药品满100减10元VE</p>
+				</div>
+				<div class="rightCont">
+					<p>满100.00元，减10.00元（普通券）</p>
+					<p>2016-11-11 00:00:00 ==></p>
+					<p>2016-12-31 00:00:00</p>
+				</div>
+			</div>
+			<div class="coupon">
+				<div class="leftBor"></div>
+				<div class="leftCont">
+					<span>￥<em>10.00</em></span>
+					<p>8月非药品满100减10元VE</p>
+				</div>
+				<div class="rightCont">
+					<p>满100.00元，减10.00元（普通券）</p>
+					<p>2016-11-11 00:00:00 ==></p>
+					<p>2016-12-31 00:00:00</p>
+				</div>
+			</div>
+			<div class="coupon">
+				<div class="leftBor"></div>
+				<div class="leftCont">
+					<span>￥<em>10.00</em></span>
+					<p>8月非药品满100减10元VE</p>
+				</div>
+				<div class="rightCont">
+					<p>满100.00元，减10.00元（普通券）</p>
+					<p>2016-11-11 00:00:00 ==></p>
+					<p>2016-12-31 00:00:00</p>
+				</div>
+			</div>
+		</div>
+		<a href="order.html" class="Btn">确定</a>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.coupon').click(function(){
+				$(this).addClass('on').siblings('.coupon').removeClass('on');
+			});
+		</script>
+	</body>
+</html>

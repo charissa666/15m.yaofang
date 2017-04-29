@@ -1,0 +1,66 @@
+.header{z-index:5;}
+#banner img{width:3.1rem;margin:0 auto;}
+.viewwrap{padding-bottom:1.3rem;}
+.goodsInf{padding-left:0.29rem;padding-right:0.23rem;position:relative;font-size:0.24rem;}
+.goodsInf_info{line-height:0.58rem;}
+.goodsInf_info>span:first-child{font-size:0.28rem;}
+.goodsInf_info>span:nth-child(2){font-size:0.24rem;margin-left:0.3rem;}
+.goodsInf_price>span:first-child{color:#e83c48;font-size:0.4rem;}
+.goodsInf_price>del:nth-child(2){color:#999;font-size:0.26rem;margin-left:0.24rem;margin-right:0.38rem;}
+.goodsInf_sale{font-size:0.26rem;margin-top:0.28rem;}
+.goodsInf_sale>span:first-child{display:inline-block;padding:0.06rem 0.14rem;color:#fff;background:#e83c48;}
+.goodsInf_share{width:0.31rem;position:absolute;top:0.26rem;right:0.35rem;}
+.goodsGroup{border-bottom:1px solid #e7e7e7;margin:0.58rem 0.23rem 0 0.29rem;padding-bottom:0.24rem;}
+.goodsGroup>p{background:url(../img/arrows_right.jpg) right center no-repeat;background-size:contain;margin-right:0.15rem;}
+.blue{color:#4990e0;}
+.goods_chuf{line-height:0.32rem;color:#666;margin:0.4rem 0.29rem;}
+.goods_tel{padding:0 0.26rem 0.3rem 0.29rem;}
+.goods_tel>span,.goods_tel>span>a{font-size:0.28rem;color:#e83c48;display: inline;}
+.goods_tel img{width:0.83rem;float:right;}
+.goodsNum{height:1.4rem;padding-left:0.29rem;padding-top:0.42rem;box-sizing: border-box;}
+.goodsNum>i{font-style:normal;float:left;line-height:0.56rem;}
+.goodsNum>span{display:block;width:0.56rem;height:0.56rem;border:1px solid #9b9b9b;float:left;text-align: center;line-height:0.56rem;}
+.goodsNum>input{width:0.9rem;height:0.56rem;line-height:0.56rem;text-align:center;border-top:1px solid #9b9b9b;border-bottom:1px solid #9b9b9b;float:left;}
+.goodsShow{border-top:1px solid #ddd;}
+.goodsShow_tit{height:0.84rem;line-height:0.84rem;font-size:0.26rem;}
+.goodsShow_tit>span{display:inline-block;text-align: center;}
+.goodsShow_tit>span.on{color:#4990e0;border-bottom:2px solid #4990e0;}
+.goodsShow_cont{margin-top:0.54rem;color:#333;}
+.showCont_list{padding:0 0.3rem;display: none;}
+.showCont_list img{width:4.9rem;margin:0 auto 0.1rem;}
+.showCont_list p{line-height:0.34rem;}
+.showCont_list h4{font-size:0.26rem;color:#0054a7;font-weight:normal;margin:0.34rem 0 0.15rem 0;}
+.shouhou{padding:0 0.4rem 0 0.5rem;}
+.pingjia{padding:0;}
+.table th{height:0.74rem;line-height:0.74rem;border:1px solid #e7e7e7;background:#eee;color:#000;font-weight: normal;text-align: left;padding-left:0.24rem;}
+.table td{border:1px solid #e7e7e7;line-height:0.46rem;padding:0 0.1rem;color:#333;}
+.table .td_name{width:1.7rem;color:#999;}
+.buyCont{height:1.04rem;width:100%;border-top:1px solid #ddd;background:#f0f0f0;position:fixed;left:0;bottom:0;}
+.buyCont_left{width:40%;float:left;}
+.buyCont_left>a{display: block;width:48%;float:left;text-align: center;padding-top:0.18rem;}
+.buy_coll{height:1.04rem;border-right:1px solid #ddd;}
+.buyCont_left>a>b{display: block;width:0.4rem;height:0.4rem;background:url(../img/collect.png) left top no-repeat;background-size: cover;margin:0 auto 0.11rem;}
+.buyCont_left>a>.shopCar{width:0.45rem;height:0.41rem;background:url(../img/shopCar.png) left top no-repeat;background-size:cover;position:relative;}
+.shopNum{display: block;width:0.26rem;line-height: 0.26rem;text-align:center;color:#fff;background:#e83c48;position:absolute;top:-0.06rem;right:-0.18rem;border-radius: 50%;font-size:0.18rem;}
+.buyCont_btn{width:60%;float:left;padding-right:0.25rem;box-sizing: border-box;}
+.buyCont_btn>a{display: block;width:42%;height:0.68rem;text-align:center;line-height:0.68rem;font-size:0.3rem;margin-top:0.18rem;float:right;border:1px solid #e83c48;color:#fff;background:#e83c48;}
+.buyCont_btn>.addShop{background:#fff;color:#e83c48;margin-right:0.2rem;}
+.comment_list{border-bottom:1px solid #e7e7e7;padding:0.5rem 0.3rem 0.32rem 0.4rem;}
+.comment_list:first-child{padding-top:0;}
+.comment_n{margin-bottom:0.1rem;overflow: hidden;}
+.comment_n>span{float:left;}
+.comment_n>span:last-child{float:right;}
+.xing{margin-left:0.36rem;}
+.xing img{width:0.28rem;float:left;margin-right:0.06rem;}
+.comment_p{line-height:0.4rem;clear: both;}
+.shade{display:none;width:100%;height:100%;background:rgba(0,0,0,.6);position:fixed;left:0;top:0;z-index:6;}
+.shareCont{display:none;width:100%;position:fixed;left:0;bottom:0;background:#fff;padding-bottom:0.5rem;z-index:7;}
+.shareTit{line-height:0.7rem;padding-left:0.3rem;font-size:0.3rem;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;}
+.shareTit img{width:0.34rem;float:right;margin:0.18rem 0.18rem 0 0;}
+.shareList li{float:left;width:25%;text-align:center;}
+.shareList img{width:0.95rem;margin:0.41rem auto 0.2rem;}
+.car_hint{display:none;width:2.4rem;height:0.76rem;line-height:0.76rem;background: rgba(0,0,0,.6);position:fixed;left:50%;top:50%;margin-left:-1.2rem;margin-top:-0.4rem;color:#d6d6d6;text-align: center;border-radius: 5px;}
+
+
+
+

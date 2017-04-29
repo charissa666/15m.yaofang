@@ -1,0 +1,74 @@
+/*我的处方*/
+.addChf{float: right;margin-right: 0.25rem;font-size: 0.26rem;color:#fff;}
+.chuf{background:#fff;margin-bottom:0.3rem;}
+.chuf_name{padding:0.45rem 0.24rem 0.28rem 0.44rem;border-bottom:1px solid #f0f0f0;}
+.chuf_name>span{color:#666;font-size:0.3rem;}
+.chuf_name>div{float:right;color:#4990e0;height:0.32rem;overflow: hidden;}
+.chuf_name img{width:0.28rem;height:0.32rem;float:right;margin-left:0.2rem;}
+.chuf_name b{float:left;line-height: 0.34rem;}
+.chuf_img{padding:0.35rem 0 0.56rem 0.22rem;overflow: hidden;}
+.chuf_img>li{float:left;margin:0 0.24rem;}
+.chuf_img img{width:1.9rem;}
+.addBtn>img{width:0.32rem;float:left;margin:0.34rem 0.36rem 0 1.87rem;}
+
+/*我的钱包*/
+.setCode{float:right;margin-right:0.25rem;font-size:0.26rem;}
+.walletCont{display: none;}
+.wallet_tit{line-height: 0.9rem;color:#666;font-size:0.3rem;overflow: hidden;}
+.wallet_tit>li{float:left;width:50%;text-align:center;}
+.wallet_tit>li.on{color:#4990e0;border-bottom:2px solid #4990e0;}
+.wallet_user{margin-top:0.67rem;font-size:0.32rem;text-align: center;}
+.wallet_user>span{color:#e83c48;}
+.wallet_list{margin-top:1.1rem;}
+.wallet_list>li{line-height:0.8rem;border-bottom:1px solid #e7e7e7;padding:0 0.3rem 0 0.44rem;}
+.wallet_list>li>em{float:right;}
+.wallet_list>li .re{color:#e83c48;}
+.wallet_list>li .ad{color:#4990e0;}
+.wallet_mkk{line-height: 1.3rem;font-size:0.32rem;padding-left:0.46rem;border-bottom:1px solid #e7e7e7;}
+.wallet_mkk em{color:#e83c48;}
+.addMkk{float:right;width:1.48rem;line-height:0.58rem;border:1px solid #4990e0;border-radius: 5px;color:#4990e0;padding-left:0.23rem;box-sizing: border-box;margin:0.34rem 0.3rem 0 0;}
+.addMkk>img{width:0.25rem;display: inline-block;margin-left:0.16rem;}
+.mkk{width:6.84rem;margin:0.42rem auto 0;border:1px solid #87a7ca;border-radius: 10px;color:#5980ab;}
+.mkk_top{position:relative;}
+.mkk_top>span{display: block;width:1.3rem;line-height:0.6rem;background:#5980ab;color:#fff;border-top-left-radius: 10px;border-top-right-radius:20px;border-bottom-right-radius:20px;text-align: center;position:absolute;left:0;top:0;}
+.mkk_c{font-size:0.36rem;font-weight: bold;text-align: center;}
+.mkk_c span{font-weight: normal;}
+.mkk_c em{font-size:0.72rem;}
+.mkk_c b{position:relative;top:-0.2rem;right:-0.08rem;}
+.mkk_top>p{width:3.4rem;line-height:0.4rem;text-align: center;border:1px solid #5980ab;border-radius: 20px;margin:0 auto 0.2rem;font-size:0.26rem;}
+.mkk_text{height:0.82rem;background:#ecf0f3;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;font-size:0.24rem;padding:0.08rem 0 0 0.2rem;box-sizing: border-box;}
+.mkk_text>p{line-height: 0.34rem;}
+.mkk.past{border-color:#b7b7b7;color:#666;}
+.mkk.past>.mkk_top>span{background:#8e8e8e;}
+.mkk.past>.mkk_top:before{display: block;content: "";width:1.31rem;height:0.98rem;background:url(../img/past.png) left top no-repeat;background-size:contain;position:absolute;right:0.2rem;top:0.25rem;}
+.mkk.past>.mkk_top>p{border-color:#b7b7b7;}
+
+/*添加每康卡*/
+.add_mkk{margin:0.7rem 0 0.26rem 0.47rem;}
+.add_mkk>span{display:block;width:1.18rem;float:left;line-height:0.74rem;font-size:0.32rem;}
+.add_mkk>input{width:5.4rem;height:0.74rem;line-height:0.74rem;padding-left:0.25rem;background:#f6f5f5;border:1px solid #5783cb;border-radius: 3px;box-sizing: border-box;}
+.mkk_hint{display:none;padding:0.3rem 0.5rem;background:rgba(0,0,0,.6);color:#fff;font-size:0.32rem;position:fixed;left:50%;top:50%;transform: translate(-50%);border-radius: 10px;white-space: nowrap;}
+
+/*充值预存款*/
+.yck_money{margin:0.68rem 0 0.63rem 0.42rem;}
+.yck_money>span{font-size:0.32rem;margin-right:0.26rem;}
+.yck_money>input{width:5.2rem;height:0.74rem;line-height: 0.74rem;padding-left:0.25rem;box-sizing: border-box;border:1px solid #5783cb;border-radius: 3px;background:#f6f5f5;}
+.payforWay{display:none;margin-top:0.2rem;padding-bottom: 0.2rem;}
+.payforWay li{clear: both;border-bottom:1px solid #f0f0f0;padding-left:0.4rem;overflow: hidden;}
+.payforWay li input{float:left;display: none;}
+.payforWay li label{float:left;}
+.payforWay li label:before{display: block;content:'';width:0.35rem;height:0.35rem;border:1px solid #9c9c9c;border-radius: 50%;float:left;margin-top:0.4rem;margin-right:0.3rem;box-sizing: border-box;}
+.payforWay li input:checked+label:before{background:url(../img/select_bj04.png) left top no-repeat;background-size: cover;border:none;}
+.payforWay li img{height:0.9rem;float:left;margin:0.16rem;}
+.payforWay li span{color:#999;font-size:0.32rem;line-height:1.2rem;}
+
+/*服务订单 预约挂号 预约详情*/
+.serve_list{border-bottom:1px solid #f0f0f0;color:#666;font-size:0.3rem;padding:0.32rem 0.29rem 0.19rem 0.35rem;overflow: hidden;}
+.serve_list>p{line-height:0.54rem;}
+.serve_list b{color:#4990e0;margin-right:0.36rem;}
+.serve_list em{float:right;text-align: right;}
+.reg_detail{background: #fff;margin-bottom: 0.3rem;}
+.reg_detail>.serve_list{padding-top:0.42rem;padding-bottom: 0.27rem;}
+
+/*意见反馈*/
+.opinion{width:90%;height:2.4rem;border:1px solid #e1e1e1;border-radius: 5px;margin:0.5rem 5% 0;padding-left:0.2rem;padding-top:0.1rem;box-sizing: border-box;}

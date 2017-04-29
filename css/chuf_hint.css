@@ -1,0 +1,10 @@
+.chuf_step{width:84%;margin-left:0.53rem;padding-top:0.68rem;}
+.chuf_step>div{font-size:0.32rem;color:#333;line-height: 0.44rem;margin-bottom:0.25rem;}
+.chuf_step>div>img{width:0.44rem;float:left;margin-right:0.34rem;}
+.chuf_step>p{color:#999;margin-bottom:0.15rem;overflow: hidden;line-height:0.4rem;}
+.chuf_step>p>span{display: block;width:0.44rem;min-height:0.66rem;float:left;margin-right:0.34rem;background:url(../img/hint_shu.jpg) left top repeat-y;background-size:contain;}
+.chuf_step>p:last-child>span{visibility: hidden;}
+.chuf_hint{clear: both;border-top:1px solid #d0d0d0;padding:0.45rem 0.5rem 0 0.53rem;margin-top:0.2rem;}
+.chuf_hint>h4{color:#e83c48;font-size:0.3rem;line-height:0.56rem;font-weight:normal;margin-bottom:0.26rem;}
+.chuf_hint>h4>img{width:0.64rem;float:left;margin-right:0.2rem;}
+.chuf_hint>p{line-height:0.4rem;margin-bottom:0.4rem;}

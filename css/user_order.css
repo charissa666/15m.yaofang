@@ -1,0 +1,67 @@
+/*全部订单*/
+body{background: #f0f0f0;}
+.orderSearch{background:#fff;padding:0.31rem 0.46rem 0.26rem;overflow: hidden;}
+.orderInp{width:5.2rem;height:0.64rem;line-height: 0.64rem;border:1px solid #d9d9d9;border-radius: 4px;float:left;}
+.orderInp>img{width:0.37rem;float:left;margin:0.17rem 0.13rem 0 0.17rem;}
+.orderInp>input{float:left;width:3.8rem;margin-top:0.18rem;}
+.orderInp>.orderDel{width:0.33rem;}
+.orderBtn{width:1.2rem;line-height:0.64rem;text-align: center;color:#fff;background:#b6b6b6;float:right;border-radius: 4px;margin-top:1px;}
+.orderCont{background:#fff;overflow: hidden;margin-bottom:0.3rem;}
+.orderTit{padding:0.4rem 0.3rem 0.22rem 0.42rem;border-bottom:1px solid #e7e7e7;}
+.orderTit>span{font-size:0.3rem;color:#666;margin-right:0.56rem;}
+.orderTit>em{display: none;}
+.orderTit>em.ywc{color:#7bd622;}
+.orderTit>em.dfk,.orderTit>em.dfh,.orderTit>em.dsh{color:#4990e0;}
+.orderTit>em.yqx{color:#e83c48;}
+.orderTit>img{display:none;width:0.31rem;float:right;}
+.orderInf{overflow: hidden;padding-left:0.3rem;}
+.orderInf>img{width:1.75rem;float:left;margin:0.14rem 0 0.18rem 0.22rem;}
+.orderTxt{float:left;margin-top:0.36rem;}
+.orderTxt>p{line-height:0.46rem;margin-left:0.22rem;}
+.orderTxt>p:nth-child(2){font-size:0.26rem;}
+.orderTxt>p:nth-child(3){color:#e83c48;font-size:0.32rem;}
+.orderTxt>p:nth-child(3)>del{color:#999;font-size:0.24rem;margin-left:0.12rem;}
+.multiTxt{clear:both;color:#b9b9b9;margin-bottom:0.3rem;margin-left:2.3rem;padding-top:0.05rem;}
+.multiTxt>b{color:#e83c48;font-size:0.34rem;}
+.orderBtns{margin-bottom:0.42rem;overflow: hidden;padding-right:0.15rem;}
+.orderBtns>a{display:none;color:#fff;float:right;padding:0.11rem 0.34rem;border-radius: 2px;margin:0 0.15rem;}
+a.orderWl{color:#4990e0;padding:0.11rem 0;}
+.orderPj{background:#4990e0;}
+.orderZf{display:none;background:#4990e0;}
+.orderGm{background:#ff9c00;}
+.orderSh{background:#ff9c00;}
+/*已完成*/
+.finish .ywc{display: inline-block;}
+.finish>.orderTit>img{display: block;}
+.finish .orderBtns>a:not(.orderZf){display: block;}
+.finish .orderBtns>a.orderSh{display: none;}
+/*待付款*/
+.payment .dfk{display: inline-block;}
+.payment .orderBtns>a.orderZf{display: block;}
+/*待发货*/
+.shipments .dfh{display: inline-block;}
+/*待收货*/
+.delivery .dsh{display: inline-block;}
+.delivery .orderBtns>a.orderWl,.delivery .orderBtns>a.orderSh{display: block;}
+.shSucce{display:none;padding:0.2rem 0.7rem;background:rgba(0,0,0,.6);color:#fff;font-size:0.32rem;position:fixed;left:50%;top:50%;transform: translate(-50%);border-radius: 7px;white-space: nowrap;}
+/*已取消*/
+.cancel .yqx{display: inline-block;}
+.cancel>.orderTit>img{display: block;}
+.cancel .orderBtns>a.orderGm{display: block;margin-top:0.2rem;}
+.cancel>.orderInf{background:#f2f2f2;}
+
+/*物流信息*/
+.wlShade{display:none;width:100%;height:100%;background:rgba(0,0,0,.5);position:fixed;left:0;top:0;}
+.wlDetail{display:none;background:#fff;width:70%;position:fixed;left:15%;top:50%;transform: translateY(-50%);border-radius: 5px;}
+.wlDetail>div{padding:0.4rem 0 0.27rem 0.42rem;border-bottom:1px solid #f0f0f0;}
+.wlDetail>div>img{width:0.46rem;float:right;margin-right:0.25rem;margin-top:-0.1rem;}
+.wlList{padding:0.3rem 0.4rem 0 0.4rem;height:9rem;overflow: auto;margin-bottom: 0.1rem;}
+.wlList>li{padding-bottom: 0.3rem;padding-left:0.3rem;position:relative;border-left:3px solid #e6e6e6;}
+.wlList>li:first-child{color:#e83c48;}
+.wlList>li:last-child{border-left-color:#fff;}
+.wlList>li:before{display: block;content: '';width:0.24rem;height:0.24rem;background:url(../img/wl_bj01.png) left top no-repeat;background-size: cover;position:absolute;left:-0.14rem;top:0.08rem;z-index: 1;}
+.wlList>li:first-child:before{background-image: url(../img/wl_bj02.png);}
+.wlList>li:first-child:after{display: block;content: '';width:0.1rem;height:0.1rem;background:#fff;position: absolute;left:-0.06rem;top:0;z-index: 0;}
+.wlList>li:last-child:after{display: block;content: '';width:3px;height:0.2rem;background:#e6e6e6;position:absolute;left:-0.06rem;top:0;z-index:0;}
+.wlList p{line-height: 0.4rem;}
+.wlList span{color:#999;font-size:0.26rem;margin-top:0.2rem;}

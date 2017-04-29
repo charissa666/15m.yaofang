@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>支付</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/payfor.css"/>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="../js/loading.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header com_header">
+			<a href="order.html"><img src="../img/top_left.png"/></a>
+			<span>支付</span>
+		</div>
+		<!--content-->
+		<div class="orderInf">
+			<p><span>提交成功！</span>应付金额<i class="red">￥<em id="total">50</em></i></p>
+			<p>订单号：14681406</p>
+		</div>
+		<ul class="payList">
+			<li>
+				<p><img src="../img/zf_mkk.jpg"/>每康卡支付<b></b></p>
+				<div class="mkkzf">
+					<div class="mkkList">
+						<p class="mkkItem01">
+							<label><span></span><input type="checkbox"/>text 0067</label>
+							<i>失效期：17-04-09</i>
+						</p>
+						<p class="mkkItem02">
+							<span>初始金额:￥100</span>
+							<span>可用余额:￥<em>10</em></span>
+						</p>
+					</div>
+					<div class="mkkList">
+						<p class="mkkItem01">
+							<label><span></span><input type="checkbox"/>text 0067</label>
+							<i>失效期：17-04-09</i>
+						</p>
+						<p class="mkkItem02">
+							<span>初始金额:￥100</span>
+							<span>可用余额:￥<em>10</em></span>
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<p><img src="../img/zf_yck.jpg"/>预存款支付<b></b></p>
+				<div class="yckzf">
+					<p class="yckItem01">
+						<input type="text" placeholder="请输入使用金额" id="yckInp" value="0"/>
+						<span>当前可用预存款:<i>￥<em id="yckMax">20</em></i></span>
+					</p>
+				</div>
+			</li>
+			<li><a href="javascript:;"><img src="../img/zf_zfb.jpg"/>支付宝支付<b></b></a></li>
+			<li><a href="javascript:;"><img src="../img/zf_wx.jpg"/>微信支付<b></b></a></li>
+		</ul>
+		<div class="footDiv"></div>
+		<!--底部确认密码-->
+		<div class="footPay">
+			<input type="text" placeholder="请输入支付密码" />
+			<div class="footBtn">使用</div>
+		</div>
+		<!--继续支付-->
+		<div class="shade"></div>
+		<div class="payCont">
+			<img src="../img/close01.jpg"/>
+			<p>您已使用每康卡和预存款支付<span>￥<em id="usedNum"></em></span></p>
+			<p class="payHint02">还需支付<span>￥<em id="needNum"></em></span>！</p>
+			<p class="payHint03">继续使用其他方式支付：</p>
+			<div>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="../img/zf_zfb.jpg"/></dt>
+						<dd>支付宝支付</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="javascript:;">
+						<dt><img src="../img/zf_wx.jpg"/></dt>
+						<dd>微信支付</dd>
+					</a>
+				</dl>
+			</div>
+		</div>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+	</body>
+	<script src="../js/payfor.js" type="text/javascript" charset="utf-8"></script>
+</html>
